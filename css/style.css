@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: khaki;
+}
+input[type=text], .list {
+    padding: .5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+}
+.wrapper {
+    width: 30rem;
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1rem;
+}
+    .wrapper h1 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        padding: .5rem;
+        text-align: center;
+        background-color: rgb(187, 187, 187);
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+}
+.stat-list {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+    .stat-list li {
+        flex: 5;
+        padding: 1rem;
+    }
+    .stat-list li:nth-child(1){
+        background-color: rgb(221, 221, 221);
+    }
+    .stat-list li:nth-child(2){
+        background-color: rgb(247, 247, 247);
+    }
+    .stat-list div {
+        width: fit-content;
+        margin: 0 auto;
+    }
+.col-1 {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: fit-content;
+    padding: 1rem;
+}
+.col-2 {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+}
+.col-radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.col-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.list {
+    width: 100%;
+    display: block;
+}
+.name-label {
+    display: block;
+}
+.name {
+    width: 100%;
+}
+.btn {
+    padding: .75rem;
+    background-color: black;
+    color:white;
+    border-radius: 6px;
+    border: 1px solid black;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 18px;
+    font-weight: 700;
+}
+.dest {
+    display: block;
+}
+.summ {
+    display: none;
+    height: 700px;
+}
+.summ-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    min-height: 32rem;
+}
+    .summ-title {
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        padding: .5rem;
+        text-align: center;
+        font-weight: 700;
+    }
+    .summ-content h2 {
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+    }
